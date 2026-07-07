@@ -100,7 +100,7 @@ The framework has three parts.
 
 ## Roadmap
 
-- Reference dataset from a Saviynt pilot to ground the metrics with real measurements.
+- Reference dataset from a pilot to ground the metrics with real measurements.
 - Standards crosswalk annex mapping statements to ISO/IEC 27001, NIST CSF, and comparable frameworks, shipped only once every control identifier is verified against its current edition.
 - Public review of the operating core draft at IIW XLIII (Mountain View, November 2026).
 - Ratification of the core following review, and archetype profiles opened for practitioner contribution.
