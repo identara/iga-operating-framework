@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="286" viewBox="0 0 760 286" font-family="Helvetica Neue, Arial, sans-serif" role="img">
+<title>Trust Gradient combines four weighted signals into a confidence score that prioritizes review attention</title>
+<rect width="760" height="286" fill="#FBFBF9"/>
+<defs><marker id="a5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#5B6572" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="30" y="30" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >Trust Gradient: a weighted composite, calibrated against outcomes</text>
+<rect x="40" y="56" width="190" height="32" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="135" y="76" font-size="12" fill="#21272E" text-anchor="middle" font-weight="normal" >TimeSinceValidation</text>
+<line x1="230" y1="72" x2="330" y2="142" stroke="#5B6572" stroke-width="1" marker-end="url(#a5)"/>
+<text x="262" y="87.6" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >w1</text>
+<rect x="40" y="100" width="190" height="32" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="135" y="120" font-size="12" fill="#21272E" text-anchor="middle" font-weight="normal" >UsageRecency</text>
+<line x1="230" y1="116" x2="330" y2="142" stroke="#5B6572" stroke-width="1" marker-end="url(#a5)"/>
+<text x="262" y="119.28" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >w2</text>
+<rect x="40" y="144" width="190" height="32" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="135" y="164" font-size="12" fill="#21272E" text-anchor="middle" font-weight="normal" >ContextStability</text>
+<line x1="230" y1="160" x2="330" y2="142" stroke="#5B6572" stroke-width="1" marker-end="url(#a5)"/>
+<text x="262" y="150.96" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >w3</text>
+<rect x="40" y="188" width="190" height="32" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="135" y="208" font-size="12" fill="#21272E" text-anchor="middle" font-weight="normal" >PeerAlignment</text>
+<line x1="230" y1="204" x2="330" y2="142" stroke="#5B6572" stroke-width="1" marker-end="url(#a5)"/>
+<text x="262" y="182.64" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >w4</text>
+<circle cx="380" cy="142" r="44" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1.4"/>
+<text x="380" y="138" font-size="16" fill="#0E7C6B" text-anchor="middle" font-weight="600" >TG</text>
+<text x="380" y="156" font-size="11" fill="#0E7C6B" text-anchor="middle" font-weight="normal" >score</text>
+<line x1="424" y1="142" x2="500" y2="142" stroke="#5B6572" stroke-width="1.2" marker-end="url(#a5)"/>
+<rect x="500" y="118" width="220" height="48" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="610" y="138" font-size="13" fill="#21272E" text-anchor="middle" font-weight="600" >review prioritization</text>
+<text x="610" y="156" font-size="10" fill="#5B6572" text-anchor="middle" font-weight="normal" >declining scores surface early</text>
+<text x="40" y="250" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >weights calibrated against historical certification outcomes (MS9);</text>
+<text x="40" y="266" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >never an automated revocation decision (MS10)</text>
+</svg>

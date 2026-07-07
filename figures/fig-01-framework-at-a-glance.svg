@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="544" viewBox="0 0 760 544" font-family="Helvetica Neue, Arial, sans-serif" role="img">
+<title>Six-layer operating core in build order with metric attachments</title>
+<rect width="760" height="544" fill="#FBFBF9"/>
+<defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#5B6572" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="30" y="34" font-size="17" fill="#21272E" text-anchor="start" font-weight="600" >The operating core: six layers in build order</text>
+<text x="30" y="54" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >each answering one question, with the four metrics attached where they instrument</text>
+<line x1="56" y1="92" x2="56" y2="484" stroke="#5B6572" stroke-width="1.2" marker-end="url(#a1)"/>
+<text x="118" y="117.0" font-size="13" fill="#5B6572" text-anchor="end" font-weight="normal" font-style="italic">why</text>
+<rect x="132" y="84" width="330" height="58" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="148" y="108" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >1 · Mandate</text>
+<text x="148" y="127" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >risk and business driver</text>
+<text x="118" y="187.0" font-size="13" fill="#5B6572" text-anchor="end" font-weight="normal" font-style="italic">who</text>
+<rect x="132" y="154" width="330" height="58" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="148" y="178" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >2 · Ownership</text>
+<text x="148" y="197" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >decision rights, escalation</text>
+<text x="118" y="257.0" font-size="13" fill="#5B6572" text-anchor="end" font-weight="normal" font-style="italic">what</text>
+<rect x="132" y="224" width="330" height="58" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="148" y="248" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >3 · Scope</text>
+<text x="148" y="267" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >identities, resources, entitlements</text>
+<line x1="462" y1="253.0" x2="496" y2="253.0" stroke="#0E7C6B" stroke-width="1"/>
+<rect x="496" y="238.0" width="234" height="30" rx="15" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1"/>
+<text x="613" y="257.0" font-size="12" fill="#0E7C6B" text-anchor="middle" font-weight="normal" >Entitlement Drift Rate</text>
+<text x="118" y="327.0" font-size="13" fill="#5B6572" text-anchor="end" font-weight="normal" font-style="italic">which</text>
+<rect x="132" y="294" width="330" height="58" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="148" y="318" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >4 · Prioritization</text>
+<text x="148" y="337" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >risk tiers and sequencing</text>
+<line x1="462" y1="323.0" x2="496" y2="323.0" stroke="#0E7C6B" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="496" y="308.0" width="234" height="30" rx="15" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="613" y="327.0" font-size="12" fill="#0E7C6B" text-anchor="middle" font-weight="normal" >Trust Gradient (proposed)</text>
+<text x="118" y="397.0" font-size="13" fill="#5B6572" text-anchor="end" font-weight="normal" font-style="italic">how</text>
+<rect x="132" y="364" width="330" height="58" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="148" y="388" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >5 · Process</text>
+<text x="148" y="407" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >lifecycle, requests, certification</text>
+<line x1="462" y1="393.0" x2="496" y2="393.0" stroke="#0E7C6B" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="496" y="378.0" width="234" height="30" rx="15" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="613" y="397.0" font-size="12" fill="#0E7C6B" text-anchor="middle" font-weight="normal" >Justification Half-Life (proposed)</text>
+<text x="118" y="467.0" font-size="13" fill="#5B6572" text-anchor="end" font-weight="normal" font-style="italic">when</text>
+<rect x="132" y="434" width="330" height="58" rx="6" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="148" y="458" font-size="15" fill="#21272E" text-anchor="start" font-weight="600" >6 · Cadence</text>
+<text x="148" y="477" font-size="12" fill="#5B6572" text-anchor="start" font-weight="normal" >reviews, expiry, timing</text>
+<line x1="462" y1="463.0" x2="496" y2="463.0" stroke="#0E7C6B" stroke-width="1"/>
+<rect x="496" y="448.0" width="234" height="30" rx="15" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1"/>
+<text x="613" y="467.0" font-size="12" fill="#0E7C6B" text-anchor="middle" font-weight="normal" >Governance Lag</text>
+<rect x="132" y="510" width="16" height="12" rx="3" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1"/>
+<text x="156" y="520" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >confirmed mapping</text>
+<rect x="292" y="510" width="16" height="12" rx="3" fill="#EDF6F4" stroke="#0E7C6B" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="316" y="520" font-size="11" fill="#5B6572" text-anchor="start" font-weight="normal" >proposed, unconfirmed (sections 4.5 and 5.5)</text>
+</svg>

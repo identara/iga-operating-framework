@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="40" viewBox="0 0 760 40" font-family="Helvetica Neue, Arial, sans-serif" role="img">
+<title>You are here: layer 3 of 6, Scope</title>
+<rect width="760" height="40" fill="#FBFBF9"/>
+<rect x="8" y="7" width="116" height="26" rx="13" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="66.0" y="24" font-size="11" fill="#5B6572" text-anchor="middle" font-weight="normal" >1 Mandate</text>
+<rect x="132" y="7" width="116" height="26" rx="13" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="190.0" y="24" font-size="11" fill="#5B6572" text-anchor="middle" font-weight="normal" >2 Ownership</text>
+<rect x="256" y="7" width="116" height="26" rx="13" fill="#21272E" stroke="#21272E" stroke-width="1"/>
+<text x="314.0" y="24" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600" >3 Scope</text>
+<rect x="380" y="7" width="116" height="26" rx="13" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="438.0" y="24" font-size="11" fill="#5B6572" text-anchor="middle" font-weight="normal" >4 Prioritization</text>
+<rect x="504" y="7" width="116" height="26" rx="13" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="562.0" y="24" font-size="11" fill="#5B6572" text-anchor="middle" font-weight="normal" >5 Process</text>
+<rect x="628" y="7" width="116" height="26" rx="13" fill="#F1F4F6" stroke="#C9CFD6" stroke-width="1"/>
+<text x="686.0" y="24" font-size="11" fill="#5B6572" text-anchor="middle" font-weight="normal" >6 Cadence</text>
+</svg>
