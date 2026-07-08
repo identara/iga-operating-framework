@@ -1,10 +1,10 @@
 # Certification Campaign Design Checklist
 
-*Companion worksheet for chapter 5 (Process). Use before, during, and after each campaign. Statements referenced: PR4, PR5, C1, C3, C6. Failure mode watched: chapter 5, F3.*
+*Companion worksheet for chapter 5 (Process). Use before, during, and after each campaign. Statements referenced: PS4, PS5, C1, C3, C6. Failure mode watched: chapter 5, F3.*
 
 **Campaign:** [name]  **Tier(s):** [tiers]  **Owner:** [role]  **Dates:** [start to end]
 
-## Before launch (PR4, C1, C3)
+## Before launch (PS4, C1, C3)
 
 - [ ] Campaign scope ties to the tier register, and frequency comes from the cadence table
 - [ ] Trigger is recorded: calendar cycle or event (role change, departure, incident, organizational change)
@@ -12,12 +12,12 @@
 - [ ] Bulk approval is constrained; where permitted, it is logged
 - [ ] Escalation for non-response is defined with a time bound
 
-## During (PR4)
+## During (PS4)
 
 - [ ] Bulk approvals are being logged and counted
 - [ ] Non-responses are escalating on the defined bound
 
-## After close (PR5, C6, F3 watch)
+## After close (PS5, C6, F3 watch)
 
 - [ ] Every denial produced a revocation with a time bound
 - [ ] Revocations verified in target systems by re-check, and the record shows it

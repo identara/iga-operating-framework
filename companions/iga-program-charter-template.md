@@ -55,6 +55,12 @@ Reports [e.g. access risk metrics, certification completion, standing exceptions
 
 Time-boxed remediation: clear [orphaned accounts, excessive entitlements, and stale access] within [timeframe], with progress reported to the sponsor at [interval].
 
+## Resources (M9)
+
+**Funding source:** [budget line or sponsor commitment]
+**Capacity:** [named roles and their allocation]
+**Revisit trigger:** scope growth past [threshold] reopens this section
+
 ## Approval
 
 By signing, the sponsor grants this program the authority stated in section 3 and accepts the accountability stated in section 4.

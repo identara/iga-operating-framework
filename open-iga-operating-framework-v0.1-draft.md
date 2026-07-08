@@ -10,15 +10,15 @@ This document is the instruction manual for running an identity governance progr
 
 *This is the single-file reading edition. The split files in this repository are canonical for issues and pull requests.*
 
-This document consolidates the framework into one file for refinement. Nothing in it is ratified. The operating core (part II) is drafted and carries normative language for review. The Operational Metrics Specification (part III) is assembled from the published research and drafted for review. Part IV defines what a contributed archetype profile must contain; no profiles are authored yet. Two instrumentation mappings are proposed and unconfirmed: Trust Gradient on Prioritization (section 4.5) and Justification Half-Life on Process (section 5.5). Each is marked in place and carries no normative weight until confirmed against the published metric definitions.
+This document consolidates the framework into one file for refinement. Nothing in it is ratified. The operating core (part II) is drafted and carries normative language for review. The Operational Metrics Specification (part III) is assembled from the published research and drafted for review. Part IV defines what a contributed archetype profile must contain; no profiles are authored yet. Two instrumentation mappings are proposed and unconfirmed: Trust Gradient on Prioritization (section 4.5) and Justification Half-Life on Process (section 5.5). Each is marked in place and carries no normative weight until confirmed empirically against pilot data.
 
 Language: **must** marks a requirement without which a layer fails. **Should** marks normative guidance a program follows unless it records a reason for departing. **May** marks an option.
 
-Every chapter follows the same skeleton: purpose, decisions, failure modes, modulation by starting state and archetype, instrumentation, companion artifacts. Every normative statement carries an identifier (M1, O1, S1, P1, PR1, C1 in the core, MS1 in part III, AP1 in part IV) and every failure mode an F number local to its chapter, so refinement feedback can cite them directly.
+Every chapter follows the same skeleton: purpose, decisions, failure modes, modulation by starting state and archetype, instrumentation, companion artifacts. Every normative statement carries an identifier (M1, O1, S1, P1, PS1, C1 in the core, MS1 in part III, AP1 in part IV) and every failure mode an F number local to its chapter, so refinement feedback can cite them directly.
 
-Three reading paths. New to identity governance: read What this is and the Terminology section, then each chapter's Purpose and Failure modes; the observable signals work as a symptom checklist for any organization, and part VI shows one organization doing all of it. Running a program already: gap-assess against the numbered decisions chapter by chapter, and record where your program departs and why. Reviewing the framework: the contestable stances are flagged at M2, M8, O2, P4, PR4, and C2, plus the two proposed metric mappings in sections 4.5 and 5.5. Diagrams restate what the prose already establishes, and every example is marked non-normative; nothing binding lives only in a picture or an example.
+Three reading paths. New to identity governance: read What this is and the Terminology section, then each chapter's Purpose and Failure modes; the observable signals work as a symptom checklist for any organization, and part VI shows one organization doing all of it. Running a program already: gap-assess against the numbered decisions chapter by chapter, and record where your program departs and why. Reviewing the framework: the contestable stances are flagged at M2, M8, O2, P4, PS4, and C2, plus the two proposed metric mappings in sections 4.5 and 5.5. Diagrams restate what the prose already establishes, and every example is marked non-normative; nothing binding lives only in a picture or an example.
 
-Intended repository structure once refined: part I becomes `README.md`, the six chapters become `core/01-mandate.md` through `core/06-cadence.md`, part III becomes the `metrics/` module, part IV becomes `profiles/`, the charter template becomes `companions/iga-program-charter-template.md`, figures live in `figures/`, and the interactive explorer is `companions/framework-explorer.html`.
+In the repository, part I is `README.md`, the six chapters are `core/01-mandate.md` through `core/06-cadence.md`, part III is the `metrics/` module, part IV is `profiles/`, the charter template is `companions/iga-program-charter-template.md`, figures live in `figures/`, the interactive explorer is `companions/framework-explorer.html`, the change process is `GOVERNANCE.md`, and `tools/lint.py` is the gate every change passes.
 
 ## Contents
 
@@ -51,7 +51,7 @@ Plain-language definitions of the terms this framework uses as known quantities.
 **Entitlement**: a specific permission inside a system, finer-grained than an account.
 **Exception**: an approved departure from policy, time-bounded and owned.
 **Granularity**: the level of detail at which access is governed: account, role or group, or individual entitlement.
-**Greenfield, bluefield, brownfield**: the governance starting state as this framework uses the terms: no governance layer yet, a partial rebuild running alongside a legacy estate, or years of accumulated access debt.
+**Greenfield, bluefield, brownfield**: the governance starting state as this framework uses the terms: no governance layer yet, a partial rebuild running alongside a legacy estate, or years of accumulated access debt. Bluefield is borrowed from adjacent migration practice, since identity lacks a native term for the middle state.
 **Joiner, mover, leaver (JML)**: the three lifecycle events: someone arrives, changes role, or departs.
 **Least privilege**: granting only the access a task needs and nothing beyond it.
 **Non-human identity (NHI)**: an identity that is not a person: service accounts, API keys, workload identities, agents.
@@ -81,7 +81,7 @@ The framework serves a program at four moments: when an organization kick starts
 
 **Run.** Once filled in, the worksheets stop being templates and become the program's operating documents. Chapters 5 and 6 govern the day to day, and the responsibility matrix and cadence table are the two a running program touches most.
 
-**Maintain.** The core builds its own upkeep in: the charter carries a review cycle (M8), tiers are revisited (P5), the cadence table reviews itself (C7), and exceptions expire (PR6). Between those cycles, the failure-mode signals run as a periodic symptom check, and the metrics specification reads whether the program still responds.
+**Maintain.** The core builds its own upkeep in: the charter carries a review cycle (M8), tiers are revisited (P5), the cadence table reviews itself (C7), and exceptions expire (PS6). Between those cycles, the failure-mode signals run as a periodic symptom check, and the metrics specification reads whether the program still responds.
 
 **Upgrade.** The numbered decisions double as an assessment instrument. Gap-assess the program against them; every unmet statement is a backlog item, and chapter 4's own tier logic sequences the backlog. The modulation sections describe how each layer's shape changes as the organization grows.
 
@@ -96,9 +96,9 @@ The framework is organized by decision order rather than as a dimension inventor
 | Team topology and interfaces | O2 and O8; topology and sourcing in profiles | Core plus profiles |
 | Scope and inventory | Chapter 3 | Normative core |
 | Prioritization and risk tiering | Chapter 4; Trust Gradient proposed | Normative core |
-| Process, risk-bearing core | Chapter 5, PR1 to PR8 | Normative core |
+| Process, risk-bearing core | Chapter 5, PS1 to PS8 | Normative core |
 | Process, wider surface | Section 5.7 | Non-normative; numbered taxonomy on roadmap |
-| Lifecycle states | PR1, PR7, PR8; F7 to F9 | Normative core |
+| Lifecycle states | PS1, PS7, PS8; chapter 5, F7 to F9 | Normative core |
 | Cadence and monitoring rhythm | Chapter 6, C1 to C8 | Normative core |
 | Program metrics | Part III, four metrics, MS1 to MS12 | Normative draft |
 | Operational telemetry | Part III catalogue | Non-normative, representative |
@@ -120,7 +120,8 @@ The framework has three parts.
 
 - Reference dataset from a pilot to ground the metrics with real measurements.
 - Standards crosswalk annex mapping statements to ISO/IEC 27001, NIST CSF, and comparable frameworks, shipped only once every control identifier is verified against its current edition.
-- Public review of the operating core draft at IIW XLIII (Mountain View, November 2026).
+- Practitioner review through IDPro and the enterprise IAM conference circuit, alongside standards-community review at IIW XLIII (Mountain View, November 2026).
+- Repository continuous integration running `tools/lint.py` on every change.
 - Ratification of the core following review, and archetype profiles opened for practitioner contribution.
 
 Roadmap items are stated in intended order. They are not commitments to a date.
@@ -129,13 +130,15 @@ Roadmap items are stated in intended order. They are not commitments to a date.
 
 This framework is designed to sit alongside the standards a program already follows. ISO/IEC 27001 and NIST specify what controls to implement. The IDPro Body of Knowledge explains identity concepts. Gartner and comparable analysts assess maturity. This framework addresses the layer beneath them, which is how the program runs day to day and who is accountable for each part of it. It fills the operating-layer gap those references leave open.
 
+
+The closest public prior art for the operating layer is FICAM, the United States federal government's identity, credential, and access management architecture and playbooks, maintained by GSA at idmanagement.gov. It covers enterprise identity processes, practices, and policies for federal employees, contractors, and partners, in architecture and playbook form. The differences are scope and form: FICAM is government-scoped guidance, and this framework is sector-neutral and written as numbered decisions a program can gap-assess against. The public sector archetype profile is where the two meet most directly.
 ### Reference implementations
 
 The framework is tool-agnostic. Any assessment tool or IGA platform can implement it. AXIS, a free IGA maturity assessment that evaluates governance as its own domain, is one reference implementation. Listing a reference implementation is not an endorsement requirement. The normative text stands independent of any tool.
 
 ### Versioning and changes
 
-The framework uses semantic versioning. A move from 1.0 to 1.1 means additive changes that do not break an existing conformance claim. A move from 1.0 to 2.0 means a breaking change. A changelog records every version. Changes are proposed and discussed through issues in the repository.
+The framework uses semantic versioning. A move from 1.0 to 1.1 means additive changes that do not break an existing conformance claim. A move from 1.0 to 2.0 means a breaking change. A changelog records every version. Changes are proposed through issues. The change process for normative text, the distinction between editorial and normative changes, and the external review panel required for ratification are defined in `GOVERNANCE.md`.
 
 ### Contributing
 
@@ -144,7 +147,7 @@ Archetype profiles are the primary contribution surface. If you run an internal 
 ### Licence
 
 The text of this framework is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You may share and adapt the material for any purpose, including commercially, provided you give appropriate credit and indicate whether changes were made.
-
+ The interactive explorer's code (HTML, CSS, JavaScript) is additionally available under the MIT licence (`LICENSE-CODE` in the repository), since CC BY fits prose better than it fits code.
 ### Citation
 
 Cite the framework as:
@@ -201,6 +204,8 @@ The layer produces one required artifact: a program charter, signed by a sponsor
 
 **M8.** The charter should set its own review cycle, twelve months at most, and should be re-ratified after any reorganization that changes decision ownership.
 
+**M9.** The mandate must carry resources: a named funding source and capacity commensurate with the scope the charter claims, recorded in the charter and revisited whenever scope grows (chapter 3, S5). Authority that cannot staff its own cadence is authority on paper.
+
 *Example (non-normative). A mid-market insurer writes its primary purpose as reducing standing privilege in claims and finance systems, with SOX and provincial privacy law listed as obligations the program satisfies. Onboarding speed is recorded as a business driver, and the chief risk officer signs as sponsor.*
 
 ### 1.3 Failure modes
@@ -212,6 +217,8 @@ The layer produces one required artifact: a program charter, signed by a sponsor
 **F3. Sponsor gap.** Authority is written down, but the signing sponsor lacks the standing to enforce it against a resistant executive. Observable signal: the first escalation that reaches leadership is overridden, and no record of the override exists.
 
 **F4. Stale mandate.** The charter was written once and never revisited. Observable signal: it names roles, committees, or reporting lines that no longer exist.
+
+**F5. Unfunded mandate.** The charter grants authority and the program cannot staff what the charter obliges. Observable signal: certifications and reviews slip for capacity reasons while the charter's scope and obligations stay unchanged.
 
 ### 1.4 Modulation
 
@@ -261,9 +268,9 @@ The layer produces two required artifacts: a decision-rights register and a resp
 
 **O6.** Owners may delegate approval authority. Delegation must be recorded, time-bounded, and revocable, and the delegator retains accountability for the outcome.
 
-**O7.** Every non-human identity must have an accountable human owner. Service accounts, API keys, workload identities, and agents each map to a named role, and ownership transfers when the holder departs (lifecycle mechanics in chapter 5, PR7).
+**O7.** Every non-human identity must have an accountable human owner. Service accounts, API keys, workload identities, and agents each map to a named role, and ownership transfers when the holder departs (lifecycle mechanics in chapter 5, PS7).
 
-**O8.** The program must name its interfaces: the functions it depends on and the handoff each carries. At minimum: HR as the authoritative source of lifecycle events (chapter 5, PR1 and PR8), the service desk for intake and fulfilment handoffs (PR3), application and resource teams for onboarding and revocation execution (S5, PR5), procurement or vendor management for external identity end dates (C2), and security operations for event triggers and usage signals (C3). Each interface names a counterpart owner on both sides and the time bound its handoff carries.
+**O8.** The program must name its interfaces: the functions it depends on and the handoff each carries. At minimum: HR as the authoritative source of lifecycle events (chapter 5, PS1 and PS8), the service desk for intake and fulfilment handoffs (PS3), application and resource teams for onboarding and revocation execution (S5, PS5), procurement or vendor management for external identity end dates (C2), and security operations for event triggers and usage signals (C3). Each interface names a counterpart owner on both sides and the time bound its handoff carries.
 
 *Example (non-normative). The finance ERP carries its access policy A with the VP Finance rather than with IT. The platform team holds R on provisioning and, under O2, cannot certify the ERP access it provisions; disputes route to the risk committee the charter names.*
 
@@ -421,9 +428,9 @@ This layer is where the three starting states diverge most, so the on-ramps are 
 
 ### 4.5 Instrumentation
 
-Trust Gradient is proposed for this layer. Status: proposed, pending confirmation against the metric's published definition, and this section carries no normative weight until confirmed.
+Trust Gradient is proposed for this layer. Status: proposed, pending empirical confirmation against pilot data, and this section carries no normative weight until that evidence exists.
 
-Rationale for the proposal: tiering is where the program assigns differentiated trust across the estate, which makes this layer the natural host for a metric that reads how trust is distributed and how it moves. Whether that matches the metric's defined semantics is the metric author's call.
+Rationale for the proposal: tiering is where the program assigns differentiated trust across the estate, which makes this layer the natural host for a metric that reads how trust is distributed and how it moves. Confirmation here is empirical rather than editorial: the mapping is confirmed when pilot data shows the metric moving in response to this layer's decisions, and the reference dataset on the roadmap is where that evidence comes from.
 
 ### 4.6 Companion artifacts
 
@@ -436,7 +443,7 @@ Risk-tiering criteria and on-ramp selector worksheet (non-normative): `companion
 *Layer 5 of 6. Interrogative: how.*
 
 ![You are here: layer 5 of 6.](figures/strip-05-process.svg)
-*Statement identifiers in this chapter use PR, since P is held by chapter 4.*
+*Statement identifiers in this chapter use PS rather than P or PR: P is held by chapter 4, and PR reads as pull request in repository discussion.*
 
 ### 5.1 Purpose
 
@@ -446,21 +453,23 @@ The layer produces defined lifecycle, request, certification, revocation, and ex
 
 ### 5.2 Decisions
 
-**PR1.** The joiner, mover, and leaver lifecycle must be defined end to end, with an accountable owner per step (the matrix in chapter 2, O4). The mover event must trigger re-evaluation of existing access rather than only granting new access, and the leaver event must carry a time bound from departure to revocation.
+**PS1.** The joiner, mover, and leaver lifecycle must be defined end to end, with an accountable owner per step (the matrix in chapter 2, O4). The mover event must trigger re-evaluation of existing access rather than only granting new access, and the leaver event must carry a time bound from departure to revocation.
 
-**PR2.** Every grant must carry a recorded justification: who approved it, on what basis, tied to what business reason. Birthright access is defined by written policy, and everything outside birthright arrives through a request. A grant without a recorded reason cannot be certified, only guessed at.
+**PS2.** Every grant must carry a recorded justification: who approved it, on what basis, tied to what business reason. Birthright access is defined by written policy, and everything outside birthright arrives through a request. A grant without a recorded reason cannot be certified, only guessed at.
 
-**PR3.** The request path must define intake, an approval chain whose depth follows tier (chapter 4, P2), and a time bound per stage. Provisioning outside the path must be detected by reconciliation and either reversed or regularized through the path.
+**PS3.** The request path must define intake, an approval chain whose depth follows tier (chapter 4, P2), and a time bound per stage. Provisioning outside the path must be detected by reconciliation and either reversed or regularized through the path.
 
-**PR4.** Certification must be a decision, and the certifier must see what the decision needs: what the entitlement does, when it was last used, and the justification on record. Bulk approval should be constrained, and where it is permitted it must be logged and reported as a campaign quality signal.
+**PS4.** Certification must be a decision, and the certifier must see what the decision needs: what the entitlement does, when it was last used, and the justification on record. Bulk approval should be constrained, and where it is permitted it must be logged and reported as a campaign quality signal.
 
-**PR5.** Revocation must be an executed outcome with a time bound and a verification step confirming removal in the target system. This applies equally to leaver events, certification denials, and policy violations.
+**PS5.** Revocation must be an executed outcome with a time bound and a verification step confirming removal in the target system. This applies equally to leaver events, certification denials, and policy violations.
 
-**PR6.** Exceptions must be time-bounded, owned, and re-justified at expiry. An exception without an expiry is a standing grant with better paperwork.
+**PS6.** Exceptions must be time-bounded, owned, and re-justified at expiry. An exception without an expiry is a standing grant with better paperwork.
 
-**PR7.** Non-human identities must have lifecycle events equivalent to joiner, mover, and leaver: a creation gate that assigns an owner (chapter 2, O7), ownership transfer when the holder departs, credential rotation on a defined cycle, and a decommission step that retires the credential and verifies its dependants.
+**PS7.** Non-human identities must have lifecycle events equivalent to joiner, mover, and leaver: a creation gate that assigns an owner (chapter 2, O7), ownership transfer when the holder departs, credential rotation on a defined cycle, and a decommission step that retires the credential and verifies its dependants.
 
-**PR8.** The lifecycle must be defined as a complete state model per identity population; joiner, mover, and leaver form the spine of the model rather than its whole. For workforce and external populations the recognized transitions include, at minimum: provisioning before start, leave of absence and return, rehire, conversion between populations, extension of an end-dated identity, and post-departure disposition covering disable, retention, and deletion. Each transition names its authoritative trigger and its owner. Departure carries distinct voluntary and involuntary paths, each with its own time bound. A return or rehire is re-baselined against current need rather than reactivated with historical access, and a conversion replaces the prior population's access profile instead of adding to it. Non-human populations recognize creation, ownership transfer, dormancy, and decommission (PR7).
+**PS8.** The lifecycle must be defined as a complete state model per identity population; joiner, mover, and leaver form the spine of the model rather than its whole. For workforce and external populations the recognized transitions include, at minimum: provisioning before start, leave of absence and return, rehire, conversion between populations, extension of an end-dated identity, and post-departure disposition covering disable, retention, and deletion. Each transition names its authoritative trigger and its owner. Departure carries distinct voluntary and involuntary paths, each with its own time bound. A return or rehire is re-baselined against current need rather than reactivated with historical access, and a conversion replaces the prior population's access profile instead of adding to it. Non-human populations recognize creation, ownership transfer, dormancy, and decommission (PS7).
+
+**PS9.** Emergency access must be defined before it is needed: who may invoke it, for which systems, and through what mechanism. Every invocation is logged as it happens, expires automatically within a defined bound, and triggers a post-use review within a defined window (chapter 6, C3). An emergency grant that skips the log is side-door provisioning with a justification attached (F4).
 
 *Example (non-normative). An analyst moving from finance to procurement triggers re-evaluation of every finance entitlement she holds. The grants without a current justification expire with the move instead of following her into the new role.*
 
@@ -498,9 +507,9 @@ Brownfield: certification and revocation carry the remediation load first, run a
 
 ### 5.5 Instrumentation
 
-Justification Half-Life is proposed for this layer. Status: proposed, pending confirmation against the metric's published definition, and this section carries no normative weight until confirmed.
+Justification Half-Life is proposed for this layer. Status: proposed, pending empirical confirmation against pilot data, and this section carries no normative weight until that evidence exists.
 
-Rationale for the proposal: PR2 creates the recorded reason for access, and certification (PR4) is where that reason is re-tested and either survives or expires. The decay of justifications over time reads as a process-layer phenomenon. Whether that matches the metric's defined semantics is the metric author's call.
+Rationale for the proposal: PS2 creates the recorded reason for access, and certification (PS4) is where that reason is re-tested and either survives or expires. The decay of justifications over time reads as a process-layer phenomenon. Confirmation here is empirical rather than editorial: the mapping is confirmed when pilot data shows the metric moving in response to this layer's decisions, and the reference dataset on the roadmap is where that evidence comes from.
 
 ### 5.6 Companion artifacts
 
@@ -513,11 +522,11 @@ The statements in this chapter govern the processes that carry access risk direc
 
 | Family | Representative processes | Where the core touches it |
 |---|---|---|
-| Identity lifecycle | Joiner, mover, leaver; leave and return; rehire and conversion; contractor extension; non-human creation, transfer, decommission | PR1, PR7, PR8 |
-| Access request and fulfilment | Intake and approval; provisioning to targets; emergency access grant and closure | PR3; C4 |
-| Access review | Scheduled campaigns; event-triggered reviews; revocation follow-through | PR4, PR5; C1, C3 |
-| Access model management | Role definition and refinement; birthright policy maintenance; entitlement catalogue and descriptions | PR2; S3 |
-| Policy, SoD, and exceptions | Policy lifecycle; segregation-of-duties rule management and violation handling; exception grant, renewal, expiry | PR6; O4 |
+| Identity lifecycle | Joiner, mover, leaver; leave and return; rehire and conversion; contractor extension; non-human creation, transfer, decommission | PS1, PS7, PS8 |
+| Access request and fulfilment | Intake and approval; provisioning to targets; emergency access grant and closure | PS3, PS9; C4 |
+| Access review | Scheduled campaigns; event-triggered reviews; revocation follow-through | PS4, PS5; C1, C3 |
+| Access model management | Role definition and refinement; birthright policy maintenance; entitlement catalogue and descriptions | PS2; S3 |
+| Policy, SoD, and exceptions | Policy lifecycle; segregation-of-duties rule management and violation handling; exception grant, renewal, expiry | PS6; O4 |
 | Application onboarding | Scope gate execution; connector and feed onboarding; owner and tier assignment at entry | S5; O5; P1 |
 | Identity data quality | Authoritative source reconciliation; attribute completeness remediation; duplicate and correlation handling | S4 |
 | Privileged access governance | Elevation request and expiry; privileged inventory; interface to PAM tooling | P4; C2 |
@@ -610,6 +619,8 @@ The four metrics measure governance responsiveness: whether the program keeps pa
 
 **MS5.** Targets and thresholds are the program's own. This specification defines how to measure, and the program decides what good looks like until published reference data exists.
 
+*A jurisdictional note, non-normative: Justification Half-Life and Trust Gradient draw on usage telemetry, and monitoring employee activity carries legal constraints in many jurisdictions, from privacy statutes to works-council obligations. A program confirms the lawful basis for its telemetry before instrumenting either metric.*
+
 ### Entitlement Drift Rate (EDR)
 
 Instruments the Scope layer (section 3.5, confirmed).
@@ -630,13 +641,15 @@ Where G is total new entitlement grants in the window, R is total removals, U is
 
 *Example (non-normative), from the source paper. A unit of 5,000 identities on a 90-day cadence issues 12,000 grants and removes 4,000; 8,000 grants are unreviewed at cycle end. GEV = 0.027, NED = 0.018, UED = 0.018 per identity per day, or roughly 1.6 unreviewed entitlements per identity entering each campaign.*
 
+**Reporting.** The per-identity-per-day rate is the definition's unit. For reporting, headline the per-campaign equivalent: a certifier understands 1.6 unreviewed entitlements per identity per campaign more readily than 0.018 per identity per day, and the two are the same measurement over a declared window (MS1).
+
 **Required data.** Entitlement grant and revocation timestamps and certification cycle dates, all typically available inside the IGA platform. **Limitations.** EDR weighs all entitlements equally; risk-weighted variants are future work. It requires reliable timestamps across connected applications.
 
 ### Governance Lag (GL)
 
 Instruments the Cadence layer (section 6.5, confirmed).
 
-**Definition.** The elapsed time between the moment an access state becomes inappropriate and the moment the governance program detects it and initiates remediation.
+**Definition.** The elapsed time between the moment an access state becomes inappropriate and the moment the governance program detects it.
 
 `GL = T(detection) - T(inappropriateness)`
 
@@ -659,7 +672,7 @@ T(detection) is the timestamp of the governance action (certification decision, 
 
 ### Justification Half-Life (JHL)
 
-Proposed for the Process layer (section 5.5); the mapping carries no normative weight until confirmed.
+Proposed for the Process layer (section 5.5); the mapping carries no normative weight until confirmed empirically against pilot data.
 
 **Definition.** The estimated duration before the business justification for an access grant of a given type loses half its original relevance, derived from a composite of governance and usage signals.
 
@@ -683,7 +696,7 @@ P(revocation or disuse) is the cumulative probability that an entitlement in the
 
 ### Trust Gradient (TG)
 
-Proposed for the Prioritization layer (section 4.5); the mapping carries no normative weight until confirmed.
+Proposed for the Prioritization layer (section 4.5); the mapping carries no normative weight until confirmed empirically against pilot data.
 
 **Definition.** A composite, continuously updated confidence score estimating the degree to which a standing access grant is believed to remain appropriate, based on governance-layer signals.
 
@@ -691,7 +704,7 @@ Proposed for the Prioritization layer (section 4.5); the mapping carries no norm
 
 ![Figure 5. Four weighted signals combine into a confidence score that prioritizes review attention.](figures/fig-05-trust-gradient.svg)
 
-The weights w1 through w4 are organization-specific, calibrated against historical certification outcomes. Certification currently refreshes trust to full confidence and measures nothing between events; TG models the reality that confidence degrades continuously as time passes, context shifts, and usage signals go quiet. It is vendor-neutral and portable by design, so two organizations on different platforms can compare governance confidence posture, which product-specific analytics cannot offer.
+The weights w1 through w4 are organization-specific, calibrated against historical certification outcomes. Certification currently refreshes trust to full confidence and measures nothing between events; TG models the reality that confidence degrades continuously as time passes, context shifts, and usage signals go quiet. The method is vendor-neutral and portable by design. Because MS9 calibrates weights locally, scores compare within one organization over time rather than across organizations; cross-organization comparability would require a published reference weighting, which does not yet exist.
 
 **MS9.** TG weights are calibrated against historical certification outcomes, documented, and recalibrated on a cycle, with the validation question recorded: does a low score predict revocation.
 
@@ -728,12 +741,12 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
-| Orphaned accounts | Accounts whose owner has left or cannot be identified | PR1, PR5; chapter 5, F1 |
+| Orphaned accounts | Accounts whose owner has left or cannot be identified | PS1, PS5; chapter 5, F1 |
 | Leaver revocation breaches | Departures where removal exceeded the time bound | C4; chapter 5, F1 |
 | Mean time to deprovision | Average elapsed time from departure to removal | C4 |
 | Dormant accounts | Active accounts unused beyond the program's dormancy threshold | MS8 usage signal; chapter 5, F2 |
-| Mover re-evaluations completed | Role changes whose existing access was re-evaluated | PR1; C3 |
-| Lifecycle event coverage | Share of authoritative-source lifecycle events that triggered their defined transition within its bound | PR1, PR8; C3 |
+| Mover re-evaluations completed | Role changes whose existing access was re-evaluated | PS1; C3 |
+| Lifecycle event coverage | Share of authoritative-source lifecycle events that triggered their defined transition within its bound | PS1, PS8; C3 |
 
 #### Coverage and data quality
 
@@ -749,18 +762,18 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
 | Campaign completion rate | Reviews finished on time; an activity measure, read with M2 in mind | C1 |
-| Bulk approval rate | Share of items approved in bulk | PR4; chapter 5, F3 |
+| Bulk approval rate | Share of items approved in bulk | PS4; chapter 5, F3 |
 | Median per-item decision time | Reviewer attention per entitlement | Chapter 5, F3 |
-| Revocation follow-through | Denials verified removed in target systems | PR5; chapter 5, F6 |
+| Revocation follow-through | Denials verified removed in target systems | PS5; chapter 5, F6 |
 
 #### Policy and exception
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
-| Exceptions past expiry | Approved departures still active beyond their bound | PR6; chapter 5, F5 |
+| Exceptions past expiry | Approved departures still active beyond their bound | PS6; chapter 5, F5 |
 | Standing access without rationale | Expiry-default categories granted standing access with no recorded reason | C2 |
-| Open segregation-of-duties violations | Unresolved toxic combinations | Chapter 1 guiding principles; PR3 |
-| Side-door grants found | Provisioning discovered outside the request path | PR3; chapter 5, F4 |
+| Open segregation-of-duties violations | Unresolved toxic combinations | Chapter 1 guiding principles; PS3 |
+| Side-door grants found | Provisioning discovered outside the request path | PS3; chapter 5, F4 |
 
 #### Privileged and non-human
 
@@ -768,7 +781,7 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 |---|---|---|
 | Privileged identity count and growth | Size and trajectory of the highest-risk population | P4 |
 | Non-human identities without owners | Non-human identities lacking an accountable human | O7; chapter 2, F5 |
-| Credentials past rotation cycle | Non-human credentials older than their rotation bound | PR7 |
+| Credentials past rotation cycle | Non-human credentials older than their rotation bound | PS7 |
 | Unknown non-human population | Estimated non-human identities outside the registry, recorded as discovery debt | S7; chapter 3, F4 |
 
 ## Part IV: Archetype profiles
@@ -860,6 +873,12 @@ Reports [e.g. access risk metrics, certification completion, standing exceptions
 
 Time-boxed remediation: clear [orphaned accounts, excessive entitlements, and stale access] within [timeframe], with progress reported to the sponsor at [interval].
 
+#### Resources (M9)
+
+**Funding source:** [budget line or sponsor commitment]
+**Capacity:** [named roles and their allocation]
+**Revisit trigger:** scope growth past [threshold] reopens this section
+
 #### Approval
 
 By signing, the sponsor grants this program the authority stated in section 3 and accepts the accountability stated in section 4.
@@ -907,7 +926,7 @@ The production cloud, the customer database, the finance system, and the code ho
 
 ### Layer 5: Fernway's processes
 
-The lifecycle checklist fills in as follows. A joiner event from the HR system grants birthright access defined by written policy: email, single sign-on, collaboration suite, team group (PR1, PR2). A mover event fires on role or department change and re-evaluates existing access; a manager change alone does not, a local call Fernway records (PR1). Leavers split into two paths: voluntary departures revoke within one business day, involuntary departures the same day (PR8), both verified in target systems (PR5). Leave of absence suspends access within one day of the HR event, return requires verification before restore, a rehire is treated as a joiner with history, and a contractor converting to employee has the contractor profile replaced rather than added to (PR8). Requests run through one intake with approval depth by tier and a bound per stage, and a weekly reconciliation looks for side-door grants (PR3). Certifications start manual and light, which is the greenfield modulation working: tier 1 quarterly with the certifier shown usage and justification, bulk approval disabled (PR4). Exceptions carry a ninety-day maximum, an owner, and CTO approval (PR6). Non-human identities pass a creation gate, rotate credentials on a schedule per tier, and decommission with dependant verification (PR7).
+The lifecycle checklist fills in as follows. A joiner event from the HR system grants birthright access defined by written policy: email, single sign-on, collaboration suite, team group (PS1, PS2). A mover event fires on role or department change and re-evaluates existing access; a manager change alone does not, a local call Fernway records (PS1). Leavers split into two paths: voluntary departures revoke within one business day, involuntary departures the same day (PS8), both verified in target systems (PS5). Leave of absence suspends access within one day of the HR event, return requires verification before restore, a rehire is treated as a joiner with history, and a contractor converting to employee has the contractor profile replaced rather than added to (PS8). Requests run through one intake with approval depth by tier and a bound per stage, and a weekly reconciliation looks for side-door grants (PS3). Certifications start manual and light, which is the greenfield modulation working: tier 1 quarterly with the certifier shown usage and justification, bulk approval disabled (PS4). Exceptions carry a ninety-day maximum, an owner, and CTO approval (PS6). Non-human identities pass a creation gate, rotate credentials on a schedule per tier, and decommission with dependant verification (PS7). Break-glass to production is defined in advance: on-call engineers may invoke it, every use is logged, access expires after four hours, and review happens the next business day (PS9).
 
 **Framework supplied:** every checkbox, including the states beyond joiner, mover, leaver that most programs discover in audit findings. **Fernway decided:** the bounds, the birthright list, the manager-change call.
 
@@ -931,7 +950,8 @@ Phase 1 only, matching the adoption order. The platform's grant and revocation l
 
 ### The ratio
 
-Count what happened. The framework supplied the six layers, the build order, roughly fifty numbered decisions, nine failure-mode checks per self-test, every worksheet row, and the two defaults Fernway kept. Fernway supplied names, one recorded overlap, one exclusion, a tier table, and about two dozen values, an afternoon of decisions it was equipped to make about itself. The structure travelled; only the judgment stayed local. That split is the reason this framework is published.
+Count what happened. The framework supplied the six layers, the build order, 47 numbered decisions, 32 failure-mode signals per self-check, every worksheet row, and the two defaults Fernway kept. Fernway supplied names, one recorded overlap, one exclusion, a tier table, and about two dozen values, an afternoon of decisions it was equipped to make about itself. The structure travelled; only the judgment stayed local. That split is the reason this framework is published.
+
 ---
 
 *Open IGA Operating Framework, consolidated draft v0.1. Licensed under CC BY 4.0.*

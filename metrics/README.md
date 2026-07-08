@@ -16,6 +16,8 @@ The four metrics measure governance responsiveness: whether the program keeps pa
 
 **MS5.** Targets and thresholds are the program's own. This specification defines how to measure, and the program decides what good looks like until published reference data exists.
 
+*A jurisdictional note, non-normative: Justification Half-Life and Trust Gradient draw on usage telemetry, and monitoring employee activity carries legal constraints in many jurisdictions, from privacy statutes to works-council obligations. A program confirms the lawful basis for its telemetry before instrumenting either metric.*
+
 ## Entitlement Drift Rate (EDR)
 
 Instruments the Scope layer (core section 3.5, confirmed).
@@ -36,13 +38,15 @@ Where G is total new entitlement grants in the window, R is total removals, U is
 
 *Example (non-normative), from the source paper. A unit of 5,000 identities on a 90-day cadence issues 12,000 grants and removes 4,000; 8,000 grants are unreviewed at cycle end. GEV = 0.027, NED = 0.018, UED = 0.018 per identity per day, or roughly 1.6 unreviewed entitlements per identity entering each campaign.*
 
+**Reporting.** The per-identity-per-day rate is the definition's unit. For reporting, headline the per-campaign equivalent: a certifier understands 1.6 unreviewed entitlements per identity per campaign more readily than 0.018 per identity per day, and the two are the same measurement over a declared window (MS1).
+
 **Required data.** Entitlement grant and revocation timestamps and certification cycle dates, all typically available inside the IGA platform. **Limitations.** EDR weighs all entitlements equally; risk-weighted variants are future work. It requires reliable timestamps across connected applications.
 
 ## Governance Lag (GL)
 
 Instruments the Cadence layer (core section 6.5, confirmed).
 
-**Definition.** The elapsed time between the moment an access state becomes inappropriate and the moment the governance program detects it and initiates remediation.
+**Definition.** The elapsed time between the moment an access state becomes inappropriate and the moment the governance program detects it.
 
 `GL = T(detection) - T(inappropriateness)`
 
@@ -65,7 +69,7 @@ T(detection) is the timestamp of the governance action (certification decision, 
 
 ## Justification Half-Life (JHL)
 
-Proposed for the Process layer (core section 5.5); the mapping carries no normative weight until confirmed.
+Proposed for the Process layer (core section 5.5); the mapping carries no normative weight until confirmed empirically against pilot data.
 
 **Definition.** The estimated duration before the business justification for an access grant of a given type loses half its original relevance, derived from a composite of governance and usage signals.
 
@@ -89,7 +93,7 @@ P(revocation or disuse) is the cumulative probability that an entitlement in the
 
 ## Trust Gradient (TG)
 
-Proposed for the Prioritization layer (core section 4.5); the mapping carries no normative weight until confirmed.
+Proposed for the Prioritization layer (core section 4.5); the mapping carries no normative weight until confirmed empirically against pilot data.
 
 **Definition.** A composite, continuously updated confidence score estimating the degree to which a standing access grant is believed to remain appropriate, based on governance-layer signals.
 
@@ -97,7 +101,7 @@ Proposed for the Prioritization layer (core section 4.5); the mapping carries no
 
 ![Figure 5. Four weighted signals combine into a confidence score that prioritizes review attention.](../figures/fig-05-trust-gradient.svg)
 
-The weights w1 through w4 are organization-specific, calibrated against historical certification outcomes. Certification currently refreshes trust to full confidence and measures nothing between events; TG models the reality that confidence degrades continuously as time passes, context shifts, and usage signals go quiet. It is vendor-neutral and portable by design, so two organizations on different platforms can compare governance confidence posture, which product-specific analytics cannot offer.
+The weights w1 through w4 are organization-specific, calibrated against historical certification outcomes. Certification currently refreshes trust to full confidence and measures nothing between events; TG models the reality that confidence degrades continuously as time passes, context shifts, and usage signals go quiet. The method is vendor-neutral and portable by design. Because MS9 calibrates weights locally, scores compare within one organization over time rather than across organizations; cross-organization comparability would require a published reference weighting, which does not yet exist.
 
 **MS9.** TG weights are calibrated against historical certification outcomes, documented, and recalibrated on a cycle, with the validation question recorded: does a low score predict revocation.
 
@@ -134,12 +138,12 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
-| Orphaned accounts | Accounts whose owner has left or cannot be identified | PR1, PR5; chapter 5, F1 |
+| Orphaned accounts | Accounts whose owner has left or cannot be identified | PS1, PS5; chapter 5, F1 |
 | Leaver revocation breaches | Departures where removal exceeded the time bound | C4; chapter 5, F1 |
 | Mean time to deprovision | Average elapsed time from departure to removal | C4 |
 | Dormant accounts | Active accounts unused beyond the program's dormancy threshold | MS8 usage signal; chapter 5, F2 |
-| Mover re-evaluations completed | Role changes whose existing access was re-evaluated | PR1; C3 |
-| Lifecycle event coverage | Share of authoritative-source lifecycle events that triggered their defined transition within its bound | PR1, PR8; C3 |
+| Mover re-evaluations completed | Role changes whose existing access was re-evaluated | PS1; C3 |
+| Lifecycle event coverage | Share of authoritative-source lifecycle events that triggered their defined transition within its bound | PS1, PS8; C3 |
 
 #### Coverage and data quality
 
@@ -155,18 +159,18 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
 | Campaign completion rate | Reviews finished on time; an activity measure, read with M2 in mind | C1 |
-| Bulk approval rate | Share of items approved in bulk | PR4; chapter 5, F3 |
+| Bulk approval rate | Share of items approved in bulk | PS4; chapter 5, F3 |
 | Median per-item decision time | Reviewer attention per entitlement | Chapter 5, F3 |
-| Revocation follow-through | Denials verified removed in target systems | PR5; chapter 5, F6 |
+| Revocation follow-through | Denials verified removed in target systems | PS5; chapter 5, F6 |
 
 #### Policy and exception
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
-| Exceptions past expiry | Approved departures still active beyond their bound | PR6; chapter 5, F5 |
+| Exceptions past expiry | Approved departures still active beyond their bound | PS6; chapter 5, F5 |
 | Standing access without rationale | Expiry-default categories granted standing access with no recorded reason | C2 |
-| Open segregation-of-duties violations | Unresolved toxic combinations | Chapter 1 guiding principles; PR3 |
-| Side-door grants found | Provisioning discovered outside the request path | PR3; chapter 5, F4 |
+| Open segregation-of-duties violations | Unresolved toxic combinations | Chapter 1 guiding principles; PS3 |
+| Side-door grants found | Provisioning discovered outside the request path | PS3; chapter 5, F4 |
 
 #### Privileged and non-human
 
@@ -174,7 +178,7 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 |---|---|---|
 | Privileged identity count and growth | Size and trajectory of the highest-risk population | P4 |
 | Non-human identities without owners | Non-human identities lacking an accountable human | O7; chapter 2, F5 |
-| Credentials past rotation cycle | Non-human credentials older than their rotation bound | PR7 |
+| Credentials past rotation cycle | Non-human credentials older than their rotation bound | PS7 |
 | Unknown non-human population | Estimated non-human identities outside the registry, recorded as discovery debt | S7; chapter 3, F4 |
 
 ---

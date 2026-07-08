@@ -13,7 +13,7 @@ Plain-language definitions of the terms this framework uses as known quantities.
 **Entitlement**: a specific permission inside a system, finer-grained than an account.
 **Exception**: an approved departure from policy, time-bounded and owned.
 **Granularity**: the level of detail at which access is governed: account, role or group, or individual entitlement.
-**Greenfield, bluefield, brownfield**: the governance starting state as this framework uses the terms: no governance layer yet, a partial rebuild running alongside a legacy estate, or years of accumulated access debt.
+**Greenfield, bluefield, brownfield**: the governance starting state as this framework uses the terms: no governance layer yet, a partial rebuild running alongside a legacy estate, or years of accumulated access debt. Bluefield is borrowed from adjacent migration practice, since identity lacks a native term for the middle state.
 **Joiner, mover, leaver (JML)**: the three lifecycle events: someone arrives, changes role, or departs.
 **Least privilege**: granting only the access a task needs and nothing beyond it.
 **Non-human identity (NHI)**: an identity that is not a person: service accounts, API keys, workload identities, agents.

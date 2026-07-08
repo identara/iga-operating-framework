@@ -54,9 +54,9 @@ This layer is where the three starting states diverge most, so the on-ramps are 
 
 ## 4.5 Instrumentation
 
-Trust Gradient is proposed for this layer. Status: proposed, pending confirmation against the metric's published definition, and this section carries no normative weight until confirmed.
+Trust Gradient is proposed for this layer. Status: proposed, pending empirical confirmation against pilot data, and this section carries no normative weight until that evidence exists.
 
-Rationale for the proposal: tiering is where the program assigns differentiated trust across the estate, which makes this layer the natural host for a metric that reads how trust is distributed and how it moves. Whether that matches the metric's defined semantics is the metric author's call.
+Rationale for the proposal: tiering is where the program assigns differentiated trust across the estate, which makes this layer the natural host for a metric that reads how trust is distributed and how it moves. Confirmation here is empirical rather than editorial: the mapping is confirmed when pilot data shows the metric moving in response to this layer's decisions, and the reference dataset on the roadmap is where that evidence comes from.
 
 ## 4.6 Companion artifacts
 

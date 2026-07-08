@@ -2,7 +2,7 @@
 
 *v0.1 public draft · maintained by Vidyaa Ganesh, Identara (identara.ca) · CC BY 4.0*
 
-> **Status.** Nothing in this repository is ratified. The operating core is drafted and carries normative language for review. The Operational Metrics Specification is assembled from the published research. Two instrumentation mappings are proposed and unconfirmed: Trust Gradient on Prioritization (core section 4.5) and Justification Half-Life on Process (core section 5.5); each carries no normative weight until confirmed.
+> **Status.** Nothing in this repository is ratified. The operating core is drafted and carries normative language for review. The Operational Metrics Specification is assembled from the published research. Two instrumentation mappings are proposed and unconfirmed: Trust Gradient on Prioritization (core section 4.5) and Justification Half-Life on Process (core section 5.5); each carries no normative weight until confirmed empirically against the pilot reference dataset on the roadmap.
 
 ## What this is
 
@@ -26,9 +26,9 @@ The core modulates along two independent axes. Starting state decides where a pr
 
 Language: **must** marks a requirement without which a layer fails. **Should** marks normative guidance a program follows unless it records a reason for departing. **May** marks an option.
 
-Every normative statement carries an identifier (M1, O1, S1, P1, PR1, C1 in the core, MS1 in the metrics specification, AP1 in the profile specification) and every failure mode an F number local to its chapter, so review feedback can cite them directly.
+Every normative statement carries an identifier (M1, O1, S1, P1, PS1, C1 in the core, MS1 in the metrics specification, AP1 in the profile specification) and every failure mode an F number local to its chapter, so review feedback can cite them directly.
 
-Three reading paths. New to identity governance: read What this is and `TERMINOLOGY.md`, then each chapter's Purpose and Failure modes; the observable signals work as a symptom checklist for any organization, and the worked example in `examples/` shows one organization doing all of it. Running a program already: gap-assess against the numbered decisions chapter by chapter, and record where your program departs and why. Reviewing the framework: the contestable stances are flagged at M2, M8, O2, P4, PR4, and C2, plus the two proposed metric mappings (core sections 4.5 and 5.5). Diagrams restate what the prose already establishes, and every example is marked non-normative; nothing binding lives only in a picture or an example.
+Three reading paths. New to identity governance: read What this is and `TERMINOLOGY.md`, then each chapter's Purpose and Failure modes; the observable signals work as a symptom checklist for any organization, and the worked example in `examples/` shows one organization doing all of it. Running a program already: gap-assess against the numbered decisions chapter by chapter, and record where your program departs and why. Reviewing the framework: the contestable stances are flagged at M2, M8, O2, P4, PS4, and C2, plus the two proposed metric mappings (core sections 4.5 and 5.5). Diagrams restate what the prose already establishes, and every example is marked non-normative; nothing binding lives only in a picture or an example.
 
 ## Repository structure
 
@@ -41,11 +41,12 @@ profiles/                    archetype profile specification (contribution surfa
 companions/                  nine non-normative fill-in artifacts, Word versions in docx/, and the explorer
 examples/                    the Fernway worked example: all six layers, every worksheet filled
 figures/                     all diagrams as editable SVG
-CHANGELOG.md · CONTRIBUTING.md · LICENSE
+CHANGELOG.md · CONTRIBUTING.md · GOVERNANCE.md · LICENSE · LICENSE-CODE · CITATION.cff
+tools/                       lint gate: python3 tools/lint.py before any commit
 open-iga-operating-framework-v0.1-draft.md   single-file reading edition
 ```
 
-The split files are canonical for issues and pull requests. The single-file edition at the root is provided for end-to-end reading and is regenerated from the split files at each version.
+The split files are the citation surface for issues and pull requests. They and the single-file edition are emitted together from one source by a build pipeline, so no file is hand-edited independently, and `tools/lint.py` is the gate every change passes.
 
 ## Why this exists
 
@@ -63,7 +64,7 @@ The framework serves a program at four moments: when an organization kick starts
 
 **Run.** Once filled in, the worksheets stop being templates and become the program's operating documents. Chapters 5 and 6 govern the day to day, and the responsibility matrix and cadence table are the two a running program touches most.
 
-**Maintain.** The core builds its own upkeep in: the charter carries a review cycle (M8), tiers are revisited (P5), the cadence table reviews itself (C7), and exceptions expire (PR6). Between those cycles, the failure-mode signals run as a periodic symptom check, and the metrics specification reads whether the program still responds.
+**Maintain.** The core builds its own upkeep in: the charter carries a review cycle (M8), tiers are revisited (P5), the cadence table reviews itself (C7), and exceptions expire (PS6). Between those cycles, the failure-mode signals run as a periodic symptom check, and the metrics specification reads whether the program still responds.
 
 **Upgrade.** The numbered decisions double as an assessment instrument. Gap-assess the program against them; every unmet statement is a backlog item, and chapter 4's own tier logic sequences the backlog. The modulation sections describe how each layer's shape changes as the organization grows.
 
@@ -78,9 +79,9 @@ The framework is organized by decision order rather than as a dimension inventor
 | Team topology and interfaces | O2 and O8; topology and sourcing in profiles | Core plus profiles |
 | Scope and inventory | Chapter 3 | Normative core |
 | Prioritization and risk tiering | Chapter 4; Trust Gradient proposed | Normative core |
-| Process, risk-bearing core | Chapter 5, PR1 to PR8 | Normative core |
+| Process, risk-bearing core | Chapter 5, PS1 to PS8 | Normative core |
 | Process, wider surface | Section 5.7 | Non-normative; numbered taxonomy on roadmap |
-| Lifecycle states | PR1, PR7, PR8; F7 to F9 | Normative core |
+| Lifecycle states | PS1, PS7, PS8; chapter 5, F7 to F9 | Normative core |
 | Cadence and monitoring rhythm | Chapter 6, C1 to C8 | Normative core |
 | Program metrics | `metrics/`, four metrics, MS1 to MS12 | Normative draft |
 | Operational telemetry | Telemetry catalogue in `metrics/` | Non-normative, representative |
@@ -102,7 +103,8 @@ The framework has three parts.
 
 - Reference dataset from a pilot to ground the metrics with real measurements.
 - Standards crosswalk annex mapping statements to ISO/IEC 27001, NIST CSF, and comparable frameworks, shipped only once every control identifier is verified against its current edition.
-- Public review of the operating core draft at IIW XLIII (Mountain View, November 2026).
+- Practitioner review through IDPro and the enterprise IAM conference circuit, alongside standards-community review at IIW XLIII (Mountain View, November 2026).
+- Repository continuous integration running `tools/lint.py` on every change.
 - Ratification of the core following review, and archetype profiles opened for practitioner contribution.
 
 Roadmap items are stated in intended order. They are not commitments to a date.
@@ -111,13 +113,15 @@ Roadmap items are stated in intended order. They are not commitments to a date.
 
 This framework is designed to sit alongside the standards a program already follows. ISO/IEC 27001 and NIST specify what controls to implement. The IDPro Body of Knowledge explains identity concepts. Gartner and comparable analysts assess maturity. This framework addresses the layer beneath them, which is how the program runs day to day and who is accountable for each part of it. It fills the operating-layer gap those references leave open.
 
+
+The closest public prior art for the operating layer is FICAM, the United States federal government's identity, credential, and access management architecture and playbooks, maintained by GSA at idmanagement.gov. It covers enterprise identity processes, practices, and policies for federal employees, contractors, and partners, in architecture and playbook form. The differences are scope and form: FICAM is government-scoped guidance, and this framework is sector-neutral and written as numbered decisions a program can gap-assess against. The public sector archetype profile is where the two meet most directly.
 ## Reference implementations
 
 The framework is tool-agnostic. Any assessment tool or IGA platform can implement it. AXIS, a free IGA maturity assessment that evaluates governance as its own domain, is one reference implementation. Listing a reference implementation is not an endorsement requirement. The normative text stands independent of any tool.
 
 ## Versioning and changes
 
-The framework uses semantic versioning. A move from 1.0 to 1.1 means additive changes that do not break an existing conformance claim. A move from 1.0 to 2.0 means a breaking change. A changelog records every version. Changes are proposed and discussed through issues in the repository.
+The framework uses semantic versioning. A move from 1.0 to 1.1 means additive changes that do not break an existing conformance claim. A move from 1.0 to 2.0 means a breaking change. A changelog records every version. Changes are proposed through issues. The change process for normative text, the distinction between editorial and normative changes, and the external review panel required for ratification are defined in `GOVERNANCE.md`.
 
 ## Contributing
 
@@ -126,7 +130,7 @@ Archetype profiles are the primary contribution surface. If you run an internal 
 ## Licence
 
 The text of this framework is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You may share and adapt the material for any purpose, including commercially, provided you give appropriate credit and indicate whether changes were made.
-
+ The interactive explorer's code (HTML, CSS, JavaScript) is additionally available under the MIT licence (`LICENSE-CODE` in the repository), since CC BY fits prose better than it fits code.
 ## Citation
 
 Cite the framework as:

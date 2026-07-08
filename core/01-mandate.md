@@ -32,6 +32,8 @@ The layer produces one required artifact: a program charter, signed by a sponsor
 
 **M8.** The charter should set its own review cycle, twelve months at most, and should be re-ratified after any reorganization that changes decision ownership.
 
+**M9.** The mandate must carry resources: a named funding source and capacity commensurate with the scope the charter claims, recorded in the charter and revisited whenever scope grows (chapter 3, S5). Authority that cannot staff its own cadence is authority on paper.
+
 *Example (non-normative). A mid-market insurer writes its primary purpose as reducing standing privilege in claims and finance systems, with SOX and provincial privacy law listed as obligations the program satisfies. Onboarding speed is recorded as a business driver, and the chief risk officer signs as sponsor.*
 
 ## 1.3 Failure modes
@@ -43,6 +45,8 @@ The layer produces one required artifact: a program charter, signed by a sponsor
 **F3. Sponsor gap.** Authority is written down, but the signing sponsor lacks the standing to enforce it against a resistant executive. Observable signal: the first escalation that reaches leadership is overridden, and no record of the override exists.
 
 **F4. Stale mandate.** The charter was written once and never revisited. Observable signal: it names roles, committees, or reporting lines that no longer exist.
+
+**F5. Unfunded mandate.** The charter grants authority and the program cannot staff what the charter obliges. Observable signal: certifications and reviews slip for capacity reasons while the charter's scope and obligations stay unchanged.
 
 ## 1.4 Modulation
 

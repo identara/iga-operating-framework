@@ -6,17 +6,17 @@
 
 | # | Capability | Derived from | Met / compensated / gap |
 |---|---|---|---|
-| 1 | Consumes lifecycle events from authoritative sources, including leave, return, rehire, and conversion signals | S4; PR1, PR8 | |
+| 1 | Consumes lifecycle events from authoritative sources, including leave, return, rehire, and conversion signals | S4; PS1, PS8 | |
 | 2 | Applies a precedence rule where identity sources conflict | S4 | |
 | 3 | Reproduces the in-scope inventory per resource class on request | S2 | |
 | 4 | Governs at entitlement granularity where the scope register requires it | S3 | |
 | 5 | Maintains a registry of non-human identities with a human owner per entry | S7; O7 | |
-| 6 | Runs the request path with an approval chain by tier and a time bound per stage | PR3; P2, C4 | |
-| 7 | Detects provisioning outside the request path by reconciliation | PR3 | |
-| 8 | Presents certifiers with entitlement description, last use, and recorded justification | PR4 | |
-| 9 | Constrains bulk approval, and logs it where permitted | PR4 | |
-| 10 | Executes revocation with verification of removal in the target system | PR5 | |
-| 11 | Maintains an exception register with expiry and owner per entry | PR6 | |
+| 6 | Runs the request path with an approval chain by tier and a time bound per stage | PS3; P2, C4 | |
+| 7 | Detects provisioning outside the request path by reconciliation | PS3 | |
+| 8 | Presents certifiers with entitlement description, last use, and recorded justification | PS4 | |
+| 9 | Constrains bulk approval, and logs it where permitted | PS4 | |
+| 10 | Executes revocation with verification of removal in the target system | PS5 | |
+| 11 | Maintains an exception register with expiry and owner per entry | PS6 | |
 | 12 | Triggers out-of-cycle review on role change, departure, incident, and organizational change | C3 | |
 | 13 | Records grant, revocation, and certification decision timestamps, and campaign completion dates | MS6; part III data model | |
 | 14 | Computes or exports the data for metrics over declared, constant windows | MS1 to MS4 | |

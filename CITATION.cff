@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use or cite this framework, please cite it as below."
+title: "Open IGA Operating Framework"
+authors:
+  - family-names: Ganesh
+    given-names: Vidyaa
+    affiliation: Identara
+version: "0.1"
+date-released: 2026-07-07
+url: "https://github.com/identara/iga-operating-framework"
+repository-code: "https://github.com/identara/iga-operating-framework"
+license: CC-BY-4.0

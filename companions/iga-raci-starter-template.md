@@ -51,7 +51,7 @@
 
 | Interface | Handoff it carries | Counterpart owner | Time bound |
 |---|---|---|---|
-| HR | Lifecycle events (PR1, PR8) | [role] | |
+| HR | Lifecycle events (PS1, PS8) | [role] | |
 | Service desk | Intake and fulfilment | [role] | |
 | Application and resource teams | Onboarding and revocation execution | [role] | |
 | Procurement or vendor management | External identity end dates | [role] | |
@@ -60,7 +60,7 @@
 ## 6. Non-human ownership check (O7)
 
 - [ ] Every service account, key, workload identity, and agent in scope maps to a named human role
-- [ ] Ownership transfer on departure is defined (chapter 5, PR7)
+- [ ] Ownership transfer on departure is defined (chapter 5, PS7)
 
 ---
 
