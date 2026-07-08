@@ -595,7 +595,7 @@ Brownfield: remediation runs as a sprint overlay on the steady-state calendar: t
 
 ### 6.5 Instrumentation
 
-Governance Lag attaches to this layer, and the mapping is confirmed. Lag is the time a governance decision takes from trigger to executed outcome, and the bounds set in C4 are the reference it reads against: the metric measures the distance between the clock this layer sets and the behaviour the program exhibits.
+Governance Lag attaches to this layer, and the mapping is confirmed. Lag is the elapsed time between an access state becoming inappropriate and the program detecting it, and the clocks this layer sets are what bound it: certification frequency (C1) caps how long an inappropriate state can wait for a scheduled look, and event triggers (C3) exist to collapse the wait entirely. Speed after detection is a different quantity, bounded by C4 and read through operational telemetry such as mean time to deprovision, and the two are never blended.
 
 This layer also hosts C5, the window conventions all four metrics compute over, so cadence is both an instrumented layer and the home of the program's measurement discipline. Calculation method and required data live in the metrics specification.
 
@@ -808,7 +808,7 @@ Candidate first profiles, matching the modulation sketches: the regulated enterp
 
 ## Part V: Companion artifacts
 
-Companions are non-normative. They operationalize the core's decisions, and where a companion and a chapter diverge, the chapter governs. Nine companions exist in draft. The charter template is embedded below; the seven worksheets and the interactive explorer travel as separate files alongside this document, and each worksheet also ships as a Word document in `companions/docx/`. Part VI shows the companions filled in for one organization.
+Companions are non-normative. They operationalize the core's decisions, and where a companion and a chapter diverge, the chapter governs. Ten companions exist in draft. The charter template is embedded below; the seven worksheets, the interactive explorer, and the presentation kit travel as separate files alongside this document, and each worksheet also ships as a Word document in `companions/docx/`. Part VI shows the worksheets filled in for one organization.
 
 - Program charter template: `companions/iga-program-charter-template.md` (embedded below)
 - Decision-rights and responsibility matrix starter: `companions/iga-raci-starter-template.md`
@@ -819,6 +819,7 @@ Companions are non-normative. They operationalize the core's decisions, and wher
 - Cadence table template: `companions/iga-cadence-table-template.md`
 - Platform capability checklist: `companions/iga-platform-capability-checklist.md`
 - Interactive framework explorer, a single self-contained page suitable for GitHub Pages: `companions/framework-explorer.html`
+- Presentation kit, twenty-five slides with presenter notes, for education sessions and reuse in engagements: `companions/open-iga-operating-framework-deck.pptx`
 
 ### IGA program charter template
 
