@@ -103,9 +103,9 @@ The framework has three parts.
 
 - Reference dataset from a pilot to ground the metrics with real measurements.
 - Standards crosswalk annex mapping statements to ISO/IEC 27001, NIST CSF, and comparable frameworks, shipped only once every control identifier is verified against its current edition.
-- Practitioner review through IDPro and the enterprise IAM conference circuit, alongside standards-community review at IIW XLIII (Mountain View, November 2026).
+- Practitioner review through IDPro.
 - Repository continuous integration running `tools/lint.py` on every change.
-- Ratification of the core following review, and archetype profiles opened for practitioner contribution.
+- Archetype profiles opened for practitioner contribution.
 
 Roadmap items are stated in intended order. They are not commitments to a date.
 
