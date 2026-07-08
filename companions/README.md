@@ -14,7 +14,6 @@ Companions are non-normative. They operationalize the core's decisions, and wher
 
 Each worksheet also ships as a fillable Word document in `docx/`.
 
-
 ---
 
 *Open IGA Operating Framework, v0.1 draft. Licensed under CC BY 4.0.*

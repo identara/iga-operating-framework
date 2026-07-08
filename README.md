@@ -113,8 +113,8 @@ Roadmap items are stated in intended order. They are not commitments to a date.
 
 This framework is designed to sit alongside the standards a program already follows. ISO/IEC 27001 and NIST specify what controls to implement. The IDPro Body of Knowledge explains identity concepts. Gartner and comparable analysts assess maturity. This framework addresses the layer beneath them, which is how the program runs day to day and who is accountable for each part of it. It fills the operating-layer gap those references leave open.
 
-
 The closest public prior art for the operating layer is FICAM, the United States federal government's identity, credential, and access management architecture and playbooks, maintained by GSA at idmanagement.gov. It covers enterprise identity processes, practices, and policies for federal employees, contractors, and partners, in architecture and playbook form. The differences are scope and form: FICAM is government-scoped guidance, and this framework is sector-neutral and written as numbered decisions a program can gap-assess against. The public sector archetype profile is where the two meet most directly.
+
 ## Reference implementations
 
 The framework is tool-agnostic. Any assessment tool or IGA platform can implement it. AXIS, a free IGA maturity assessment that evaluates governance as its own domain, is one reference implementation. Listing a reference implementation is not an endorsement requirement. The normative text stands independent of any tool.
@@ -130,7 +130,9 @@ Archetype profiles are the primary contribution surface. If you run an internal 
 ## Licence
 
 The text of this framework is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You may share and adapt the material for any purpose, including commercially, provided you give appropriate credit and indicate whether changes were made.
- The interactive explorer's code (HTML, CSS, JavaScript) is additionally available under the MIT licence (`LICENSE-CODE` in the repository), since CC BY fits prose better than it fits code.
+
+The interactive explorer's code (HTML, CSS, JavaScript) is additionally available under the MIT licence (`LICENSE-CODE` in the repository), since CC BY fits prose better than it fits code.
+
 ## Citation
 
 Cite the framework as:
@@ -140,7 +142,6 @@ Cite the framework as:
 The metrics research underlying the Operational Metrics Specification has a separate formal citation:
 
 > Ganesh, V. *Measuring What Moves.* SSRN, abstract ID 6842545. DOI: 10.2139/ssrn.6842545
-
 
 ---
 

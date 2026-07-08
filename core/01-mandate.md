@@ -66,7 +66,7 @@ No metric in the metrics specification attaches to this layer in v0.1, and none 
 
 ## 1.6 Companion artifacts
 
-IGA program charter template (non-normative), one page when completed: `companions/iga-program-charter-template.md`. The template operationalizes M1 through M8. Where the template and this chapter diverge, the chapter governs.
+IGA program charter template (non-normative), one page when completed: `companions/iga-program-charter-template.md`. The template operationalizes M1 through M9. Where the template and this chapter diverge, the chapter governs.
 
 *The mandate creates authority. The next layer distributes it into named roles and decision rights.*
 

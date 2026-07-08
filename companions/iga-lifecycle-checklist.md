@@ -1,6 +1,6 @@
 # Lifecycle Definition Checklist
 
-*Companion worksheet for chapter 5 (Process). Work through each block; every unchecked box is a defined gap. Statements referenced: PS1 to PS3, PS5 to PS8.*
+*Companion worksheet for chapter 5 (Process). Work through each block; every unchecked box is a defined gap. Statements referenced: PS1 to PS3, PS5 to PS9.*
 
 **Organization:** [name]  **Version:** [n]  **Date:** [date]  **Owner:** [role]
 
@@ -47,13 +47,12 @@
 
 ## Request path and emergency access (PS3, PS9)
 
-- [ ] Emergency access is defined in advance: who may invoke it, for which systems, through what mechanism
-- [ ] Every emergency use is logged at invocation, expires automatically, and receives a post-use review
-
 - [ ] Intake is defined and is the only path
 - [ ] Approval chain depth follows tier (chapter 4, P2)
 - [ ] Each stage carries a time bound
 - [ ] Reconciliation detects grants made outside the path, and each is reversed or regularized
+- [ ] Emergency access is defined in advance: who may invoke it, for which systems, through what mechanism
+- [ ] Every emergency use is logged at invocation, expires automatically, and receives a post-use review
 
 ## Justifications (PS2)
 

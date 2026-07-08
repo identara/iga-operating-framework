@@ -134,7 +134,7 @@ Programs also track operational telemetry: point-in-time counts and event measur
 
 The catalogue is representative rather than exhaustive. The framework tie names the statement or failure-mode signal each indicator evidences, which is what separates a governance reading from a dashboard count.
 
-#### Lifecycle hygiene
+### Lifecycle hygiene
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
@@ -145,7 +145,7 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 | Mover re-evaluations completed | Role changes whose existing access was re-evaluated | PS1; C3 |
 | Lifecycle event coverage | Share of authoritative-source lifecycle events that triggered their defined transition within its bound | PS1, PS8; C3 |
 
-#### Coverage and data quality
+### Coverage and data quality
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
@@ -154,7 +154,7 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 | Uncorrelated accounts | Accounts not mapped to a human or non-human identity | S1, S7; chapter 3, F3 |
 | External identities without end dates | Contractor or vendor identities lacking expiry | C2; S1 |
 
-#### Certification quality
+### Certification quality
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
@@ -163,7 +163,7 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 | Median per-item decision time | Reviewer attention per entitlement | Chapter 5, F3 |
 | Revocation follow-through | Denials verified removed in target systems | PS5; chapter 5, F6 |
 
-#### Policy and exception
+### Policy and exception
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|
@@ -172,7 +172,7 @@ The catalogue is representative rather than exhaustive. The framework tie names 
 | Open segregation-of-duties violations | Unresolved toxic combinations | Chapter 1 guiding principles; PS3 |
 | Side-door grants found | Provisioning discovered outside the request path | PS3; chapter 5, F4 |
 
-#### Privileged and non-human
+### Privileged and non-human
 
 | Indicator | What it reads | Framework tie |
 |---|---|---|

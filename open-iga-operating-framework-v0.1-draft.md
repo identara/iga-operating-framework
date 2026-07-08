@@ -22,46 +22,46 @@ In the repository, part I is `README.md`, the six chapters are `core/01-mandate.
 
 ## Contents
 
-Terminology
-Part I: Framework overview
-Part II: Operating core
-- Chapter 1: Mandate
-- Chapter 2: Ownership
-- Chapter 3: Scope
-- Chapter 4: Prioritization
-- Chapter 5: Process
-- Chapter 6: Cadence
-Part III: Operational Metrics Specification
-Part IV: Archetype profiles
-Part V: Companion artifacts
-Part VI: Worked example
+- Terminology
+- Part I: Framework overview
+- Part II: Operating core
+  - Chapter 1: Mandate
+  - Chapter 2: Ownership
+  - Chapter 3: Scope
+  - Chapter 4: Prioritization
+  - Chapter 5: Process
+  - Chapter 6: Cadence
+- Part III: Operational Metrics Specification
+- Part IV: Archetype profiles
+- Part V: Companion artifacts
+- Part VI: Worked example
 
 ## Terminology
 
 Plain-language definitions of the terms this framework uses as known quantities. Definitions describe usage within this framework.
 
-**Access request**: how someone asks for access they do not already have.
-**Archetype**: the shape of the organization (regulated enterprise, small product organization, public sector body), which sets the target form of each layer.
-**Authoritative source**: the system treated as the truth about an identity population, such as the HR system for employees.
-**Birthright access**: access granted automatically because of who someone is, by role or department, rather than by request.
-**Certification** (also access review): a scheduled decision on whether existing access should stay, made by someone accountable for it.
-**Compensating control**: a heavier check applied where the preferred control cannot run yet.
-**Decommission**: retiring an account or credential so it can no longer be used.
-**Drift**: the widening gap between the access people hold and the access they need.
-**Entitlement**: a specific permission inside a system, finer-grained than an account.
-**Exception**: an approved departure from policy, time-bounded and owned.
-**Granularity**: the level of detail at which access is governed: account, role or group, or individual entitlement.
-**Greenfield, bluefield, brownfield**: the governance starting state as this framework uses the terms: no governance layer yet, a partial rebuild running alongside a legacy estate, or years of accumulated access debt. Bluefield is borrowed from adjacent migration practice, since identity lacks a native term for the middle state.
-**Joiner, mover, leaver (JML)**: the three lifecycle events: someone arrives, changes role, or departs.
-**Least privilege**: granting only the access a task needs and nothing beyond it.
-**Non-human identity (NHI)**: an identity that is not a person: service accounts, API keys, workload identities, agents.
-**Orphaned account**: an account whose owner has left or cannot be identified.
-**Provisioning, deprovisioning**: creating and granting access; removing it.
-**Reconciliation**: comparing what a target system actually contains against what the records say it should contain.
-**Segregation of duties (SoD)**: splitting the steps of a sensitive process across people so no one person can complete it alone.
-**Side-door provisioning**: access granted outside the defined request path.
-**Standing access**: access that persists indefinitely rather than expiring.
-**Tier**: the risk level assigned to a system, which sets how much governance that system receives.
+- **Access request**: how someone asks for access they do not already have.
+- **Archetype**: the shape of the organization (regulated enterprise, small product organization, public sector body), which sets the target form of each layer.
+- **Authoritative source**: the system treated as the truth about an identity population, such as the HR system for employees.
+- **Birthright access**: access granted automatically because of who someone is, by role or department, rather than by request.
+- **Certification** (also access review): a scheduled decision on whether existing access should stay, made by someone accountable for it.
+- **Compensating control**: a heavier check applied where the preferred control cannot run yet.
+- **Decommission**: retiring an account or credential so it can no longer be used.
+- **Drift**: the widening gap between the access people hold and the access they need.
+- **Entitlement**: a specific permission inside a system, finer-grained than an account.
+- **Exception**: an approved departure from policy, time-bounded and owned.
+- **Granularity**: the level of detail at which access is governed: account, role or group, or individual entitlement.
+- **Greenfield, bluefield, brownfield**: the governance starting state as this framework uses the terms: no governance layer yet, a partial rebuild running alongside a legacy estate, or years of accumulated access debt. Bluefield is borrowed from adjacent migration practice, since identity lacks a native term for the middle state.
+- **Joiner, mover, leaver (JML)**: the three lifecycle events: someone arrives, changes role, or departs.
+- **Least privilege**: granting only the access a task needs and nothing beyond it.
+- **Non-human identity (NHI)**: an identity that is not a person: service accounts, API keys, workload identities, agents.
+- **Orphaned account**: an account whose owner has left or cannot be identified.
+- **Provisioning, deprovisioning**: creating and granting access; removing it.
+- **Reconciliation**: comparing what a target system actually contains against what the records say it should contain.
+- **Segregation of duties (SoD)**: splitting the steps of a sensitive process across people so no one person can complete it alone.
+- **Side-door provisioning**: access granted outside the defined request path.
+- **Standing access**: access that persists indefinitely rather than expiring.
+- **Tier**: the risk level assigned to a system, which sets how much governance that system receives.
 
 ## Part I: Framework overview
 
@@ -130,8 +130,8 @@ Roadmap items are stated in intended order. They are not commitments to a date.
 
 This framework is designed to sit alongside the standards a program already follows. ISO/IEC 27001 and NIST specify what controls to implement. The IDPro Body of Knowledge explains identity concepts. Gartner and comparable analysts assess maturity. This framework addresses the layer beneath them, which is how the program runs day to day and who is accountable for each part of it. It fills the operating-layer gap those references leave open.
 
-
 The closest public prior art for the operating layer is FICAM, the United States federal government's identity, credential, and access management architecture and playbooks, maintained by GSA at idmanagement.gov. It covers enterprise identity processes, practices, and policies for federal employees, contractors, and partners, in architecture and playbook form. The differences are scope and form: FICAM is government-scoped guidance, and this framework is sector-neutral and written as numbered decisions a program can gap-assess against. The public sector archetype profile is where the two meet most directly.
+
 ### Reference implementations
 
 The framework is tool-agnostic. Any assessment tool or IGA platform can implement it. AXIS, a free IGA maturity assessment that evaluates governance as its own domain, is one reference implementation. Listing a reference implementation is not an endorsement requirement. The normative text stands independent of any tool.
@@ -147,7 +147,9 @@ Archetype profiles are the primary contribution surface. If you run an internal 
 ### Licence
 
 The text of this framework is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You may share and adapt the material for any purpose, including commercially, provided you give appropriate credit and indicate whether changes were made.
- The interactive explorer's code (HTML, CSS, JavaScript) is additionally available under the MIT licence (`LICENSE-CODE` in the repository), since CC BY fits prose better than it fits code.
+
+The interactive explorer's code (HTML, CSS, JavaScript) is additionally available under the MIT licence (`LICENSE-CODE` in the repository), since CC BY fits prose better than it fits code.
+
 ### Citation
 
 Cite the framework as:
@@ -238,7 +240,7 @@ No metric in the metrics specification attaches to this layer in v0.1, and none 
 
 ### 1.6 Companion artifacts
 
-IGA program charter template (non-normative), one page when completed: `companions/iga-program-charter-template.md`. The template operationalizes M1 through M8. Where the template and this chapter diverge, the chapter governs.
+IGA program charter template (non-normative), one page when completed: `companions/iga-program-charter-template.md`. The template operationalizes M1 through M9. Where the template and this chapter diverge, the chapter governs.
 
 *The mandate creates authority. The next layer distributes it into named roles and decision rights.*
 
@@ -443,6 +445,7 @@ Risk-tiering criteria and on-ramp selector worksheet (non-normative): `companion
 *Layer 5 of 6. Interrogative: how.*
 
 ![You are here: layer 5 of 6.](figures/strip-05-process.svg)
+
 *Statement identifiers in this chapter use PS rather than P or PR: P is held by chapter 4, and PR reads as pull request in repository discussion.*
 
 ### 5.1 Purpose
@@ -514,6 +517,7 @@ Rationale for the proposal: PS2 creates the recorded reason for access, and cert
 ### 5.6 Companion artifacts
 
 Lifecycle definition checklist (non-normative): `companions/iga-lifecycle-checklist.md`.
+
 Certification campaign design checklist (non-normative): `companions/iga-certification-checklist.md`.
 
 ### 5.7 The wider process surface (non-normative)
@@ -820,9 +824,9 @@ Companions are non-normative. They operationalize the core's decisions, and wher
 
 *Template. Replace every bracketed field. Delete the italic guidance under each heading before you finalize. Keep the finished charter to one page.*
 
-**Organization:** [name]
-**Program sponsor:** [name, title]
-**Charter date:** [date]
+**Organization:** [name]\
+**Program sponsor:** [name, title]\
+**Charter date:** [date]\
 **Next review:** [date, e.g. 12 months from the charter date]
 
 #### 1. Purpose
@@ -839,7 +843,7 @@ Business drivers: [e.g. faster onboarding, shorter access request cycle time, re
 
 *High level only. Detailed scope is defined in a separate document. State what sits inside the boundary and what sits outside it.*
 
-In scope: [e.g. workforce identity across production and financial systems].
+In scope: [e.g. workforce identity across production and financial systems].\
 Out of scope: [e.g. customer identity, non-production sandboxes].
 
 #### 3. Authority
@@ -857,7 +861,7 @@ This program holds the authority to:
 
 *Who the program answers to, what it reports, and how often.*
 
-Accountable to: [e.g. the CISO, a risk committee, or the board].
+Accountable to: [e.g. the CISO, a risk committee, or the board].\
 Reports [e.g. access risk metrics, certification completion, standing exceptions] on a [monthly or quarterly] cycle.
 
 #### 5. Guiding principles
@@ -875,8 +879,8 @@ Time-boxed remediation: clear [orphaned accounts, excessive entitlements, and st
 
 #### Resources (M9)
 
-**Funding source:** [budget line or sponsor commitment]
-**Capacity:** [named roles and their allocation]
+**Funding source:** [budget line or sponsor commitment]\
+**Capacity:** [named roles and their allocation]\
 **Revisit trigger:** scope growth past [threshold] reopens this section
 
 #### Approval

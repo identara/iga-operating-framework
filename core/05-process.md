@@ -5,6 +5,7 @@
 ![You are here: layer 5 of 6.](../figures/strip-05-process.svg)
 
 *Part of the Open IGA Operating Framework, operating core. v0.1 draft for public review. Language conventions (must, should, may) are defined in the repository README.*
+
 *Statement identifiers in this chapter use PS rather than P or PR: P is held by chapter 4, and PR reads as pull request in repository discussion.*
 
 ## 5.1 Purpose
@@ -76,6 +77,7 @@ Rationale for the proposal: PS2 creates the recorded reason for access, and cert
 ## 5.6 Companion artifacts
 
 Lifecycle definition checklist (non-normative): `companions/iga-lifecycle-checklist.md`.
+
 Certification campaign design checklist (non-normative): `companions/iga-certification-checklist.md`.
 
 ## 5.7 The wider process surface (non-normative)

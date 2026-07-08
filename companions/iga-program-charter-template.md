@@ -2,9 +2,9 @@
 
 *Template. Replace every bracketed field. Delete the italic guidance under each heading before you finalize. Keep the finished charter to one page.*
 
-**Organization:** [name]
-**Program sponsor:** [name, title]
-**Charter date:** [date]
+**Organization:** [name]\
+**Program sponsor:** [name, title]\
+**Charter date:** [date]\
 **Next review:** [date, e.g. 12 months from the charter date]
 
 ## 1. Purpose
@@ -21,7 +21,7 @@ Business drivers: [e.g. faster onboarding, shorter access request cycle time, re
 
 *High level only. Detailed scope is defined in a separate document. State what sits inside the boundary and what sits outside it.*
 
-In scope: [e.g. workforce identity across production and financial systems].
+In scope: [e.g. workforce identity across production and financial systems].\
 Out of scope: [e.g. customer identity, non-production sandboxes].
 
 ## 3. Authority
@@ -39,7 +39,7 @@ This program holds the authority to:
 
 *Who the program answers to, what it reports, and how often.*
 
-Accountable to: [e.g. the CISO, a risk committee, or the board].
+Accountable to: [e.g. the CISO, a risk committee, or the board].\
 Reports [e.g. access risk metrics, certification completion, standing exceptions] on a [monthly or quarterly] cycle.
 
 ## 5. Guiding principles
@@ -57,8 +57,8 @@ Time-boxed remediation: clear [orphaned accounts, excessive entitlements, and st
 
 ## Resources (M9)
 
-**Funding source:** [budget line or sponsor commitment]
-**Capacity:** [named roles and their allocation]
+**Funding source:** [budget line or sponsor commitment]\
+**Capacity:** [named roles and their allocation]\
 **Revisit trigger:** scope growth past [threshold] reopens this section
 
 ## Approval

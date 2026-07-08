@@ -16,7 +16,6 @@ Review works as follows: the maintainer acknowledges within a week, reviews agai
 
 Editorial fixes (typos, formatting, broken links) come straight in as pull requests. Changes to normative text follow the process in `GOVERNANCE.md`.
 
-
 ---
 
 *Open IGA Operating Framework, v0.1 draft. Licensed under CC BY 4.0.*
