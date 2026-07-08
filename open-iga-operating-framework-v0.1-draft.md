@@ -152,7 +152,7 @@ The text of this framework is licensed under Creative Commons Attribution 4.0 In
 
 Cite the framework as:
 
-> Ganesh, V. *Open IGA Operating Framework* (v0.1). Identara. Available at: https://github.com/identara/iga-operating-framework
+> Ganesh, V. *Open IGA Operating Framework* (v0.1). Identara. DOI: 10.5281/zenodo.21251831. Available at: https://github.com/identara/iga-operating-framework
 
 The metrics research underlying the Operational Metrics Specification has a separate formal citation:
 

@@ -7,6 +7,7 @@ authors:
     affiliation: Identara
 version: "0.1"
 date-released: 2026-07-07
+doi: 10.5281/zenodo.21251831
 url: "https://github.com/identara/iga-operating-framework"
 repository-code: "https://github.com/identara/iga-operating-framework"
 license: CC-BY-4.0

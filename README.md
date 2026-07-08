@@ -1,6 +1,6 @@
 # Open IGA Operating Framework
 
-*v0.1 public draft · maintained by Vidyaa Ganesh, Identara (identara.ca) · CC BY 4.0*
+*v0.1 public draft · maintained by Vidyaa Ganesh, Identara (identara.ca) · CC BY 4.0 · DOI 10.5281/zenodo.21251831*
 
 > **Status.** Nothing in this repository is ratified. The operating core is drafted and carries normative language for review. The Operational Metrics Specification is assembled from the published research. Two instrumentation mappings are proposed and unconfirmed: Trust Gradient on Prioritization (core section 4.5) and Justification Half-Life on Process (core section 5.5); each carries no normative weight until confirmed empirically against the pilot reference dataset on the roadmap.
 
@@ -135,7 +135,7 @@ The text of this framework is licensed under Creative Commons Attribution 4.0 In
 
 Cite the framework as:
 
-> Ganesh, V. *Open IGA Operating Framework* (v0.1). Identara. Available at: https://github.com/identara/iga-operating-framework
+> Ganesh, V. *Open IGA Operating Framework* (v0.1). Identara. DOI: 10.5281/zenodo.21251831. Available at: https://github.com/identara/iga-operating-framework
 
 The metrics research underlying the Operational Metrics Specification has a separate formal citation:
 
